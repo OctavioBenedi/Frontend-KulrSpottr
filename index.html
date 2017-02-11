@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GAMEBOARD KulrSpottr</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main_content">            
+            <div id="level_info">
+                <h1>Level <span id="level"></span>
+            </div>
+            <div id="board"></div>
+            <div id="theHallOfFame">
+                <button id="submitPlayerName" onclick="GAMEBOARD.findTheCell();" class="button -blue center">Help me!</button>
+                <h2>Hall of Fame</h2>
+                <div id="hallOfFame"><p>Are you ready to become one of the bests?</p></div>
+            </div>  
+        </div>
+        
+
+        <div id="modal">
+            <div>
+                <h1>You have reached Level <span id="maxLevel"></span></h1>
+                <p>Submit your name to the hall of fame</p>
+                <input id="playerName" /> <button id="submitPlayerName" onclick="GAMEBOARD.hallOfFame();" 
+                class="button -blue center">Submit</button>
+            </div>
+        </div>
+    </body>
+    
+    <script src="js/color.js" type="text/javascript"></script>        
+    <script src="js/css.color.js" type="text/javascript"></script>    
+    <script src="js/board.js" type="text/javascript"></script>    
+</html>
